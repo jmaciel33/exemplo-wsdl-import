@@ -1,0 +1,21 @@
+project:
+  name: mock-vivere-simulacao
+  version: 0.1
+  description: WSDL import
+  
+info:
+  build:
+    artifact: ${project.artifactId}
+    name: ${project.name}
+    description: ${project.description}
+    version: ${project.version}
+
+spring.jmx:
+   enabled: false
+
+# Profile
+spring: 
+    profiles: 
+        active: dev
+
+basepackages: com.sample.wsdl
